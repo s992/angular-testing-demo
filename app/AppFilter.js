@@ -11,5 +11,5 @@
 
 			return value.substr( 0, maxLength ) + "...";
 		};
-	}]);
-});
+	});
+})();

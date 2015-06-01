@@ -7,9 +7,11 @@
 		var service = {};
 
 		service.getUser = function( userId ) {
-			return $http.get( apiUrl + "/user/" + userId );
+			return $http.get( apiUrl + "/user/" + userId ).then(function( result ) {
+				return result.data;
+			});
 		};
 
 		return service;
 	}]);
-});
+})();

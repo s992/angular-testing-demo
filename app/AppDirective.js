@@ -7,9 +7,9 @@
 		return {
 			restrict: "E",
 			scope: {
-				text: "@"
+				text: "="
 			},
 			template: "<h1>{{ text }}</h1>"
 		};
-	}]);
-});
+	});
+})();
