@@ -15,11 +15,11 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-        "node_modules/angular/angular.js",
-        "node_modules/angular-mocks/angular-mocks.js",
-        "app/app.js",
-        "app/!(app).js",
-        "test/unit/*.js"
+        'node_modules/angular/angular.js',
+        'node_modules/angular-mocks/angular-mocks.js',
+        'app/app.js',
+        'app/!(app).js',
+        'test/unit/*.js'
     ],
 
 
@@ -31,7 +31,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-        "app/**/*.js": ["coverage"]
+        'app/**/*.js': ['coverage']
     },
 
 
@@ -42,8 +42,8 @@ module.exports = function(config) {
 
 
     coverageReporter: {
-        type: "html",
-        dir: "coverage/"
+        type: 'html',
+        dir: 'coverage/'
     },
 
 
