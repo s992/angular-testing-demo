@@ -13,5 +13,9 @@
 			$scope.user = undefined;
 		};
 
+		$scope.notCovered = function() {
+			alert("I'm not covered!");
+		};
+
 	}]);
 })();
