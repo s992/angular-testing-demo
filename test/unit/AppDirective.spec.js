@@ -1,5 +1,3 @@
-require("angular");
-require("angular-mocks");
 require("../../app/app");
 require("../../app/AppDirective");
 
