@@ -1,10 +1,15 @@
+require("angular");
+require("angular-mocks");
+require("../../app/app");
+require("../../app/AppService");
+
 describe("AppService", function() {
 
 	var service,
 		$httpBackend;
 
 	beforeEach(function() {
-		module("app.services", function( $provide ) {
+		angular.mock.module("app.services", function( $provide ) {
 			$provide.value( "apiUrl", "api" );
 		});
 

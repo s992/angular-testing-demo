@@ -1,3 +1,8 @@
+require("angular");
+require("angular-mocks");
+require("../../app/app");
+require("../../app/AppDirective");
+
 describe("Header", function() {
 
 	var element,
@@ -5,7 +10,7 @@ describe("Header", function() {
 		$compile;
 
 	beforeEach(function() {
-		module("app.directives", function( $provide ) {});
+		angular.mock.module("app.directives", function( $provide ) {});
 
 		inject(function( $injector ) {
 			scope = $injector.get("$rootScope").$new();

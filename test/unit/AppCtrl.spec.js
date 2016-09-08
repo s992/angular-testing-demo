@@ -1,3 +1,8 @@
+require("angular");
+require("angular-mocks");
+require("../../app/app");
+require("../../app/AppCtrl");
+
 describe("AppCtrl", function() {
 
 	var initController,
@@ -6,7 +11,7 @@ describe("AppCtrl", function() {
 		appServiceMock;
 
 	beforeEach(function() {
-		module("app.controllers", function( $provide ) {});
+		angular.mock.module("app.controllers", function( $provide ) {});
 
 		inject(function( $injector ) {
 			var $controller = $injector.get("$controller"),

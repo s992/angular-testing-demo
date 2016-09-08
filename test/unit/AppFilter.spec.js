@@ -1,9 +1,14 @@
+require("angular");
+require("angular-mocks");
+require("../../app/app");
+require("../../app/AppFilter");
+
 describe("AppFilter", function() {
 
 	var filter;
 
 	beforeEach(function() {
-		module("app.filters", function( $provide ) {});
+		angular.mock.module("app.filters", function( $provide ) {});
 
 		inject(function( $filter ) {
 			filter = $filter;
