@@ -21,6 +21,10 @@ describe("Header", function() {
 		});
 	});
 
+	it("should match the snapshot", function() {
+		expect( element.html() ).toMatchSnapshot();
+	});
+
 	it("should create an h1 element", function() {
 		expect( element.children("h1") ).toBeDefined();
 	});
