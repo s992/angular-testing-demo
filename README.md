@@ -1,4 +1,4 @@
-Basic example of unit testing AngularJS Jest.
+Basic example of unit testing AngularJS with Jest.
 
 To install: `npm install`
 
